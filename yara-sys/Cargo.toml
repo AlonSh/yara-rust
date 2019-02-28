@@ -10,4 +10,4 @@ keywords = ["yara", "ffi"]
 categories = ["external-ffi-bindings"]
 
 [build-dependencies]
-bindgen = { version = "0.36", optional = true }
+bindgen = "0.42.2"
