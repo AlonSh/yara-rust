@@ -1,9 +1,9 @@
 // Inspired from https://github.com/jgallagher/rusqlite/blob/master/libsqlite3-sys/build.rs
 
 fn main() {
-    // Tell cargo to tell rustc to link the system yara
-    // shared library.
-    println!("cargo:rustc-link-lib=yara");
+    // Tell cargo to tell rustc to link statically to the given yara lib.
+    println!("cargo:rustc-link-search=./external");
+    println!("cargo:rustc-link-lib=static=yara");
 
     build::add_bindings();
 }
