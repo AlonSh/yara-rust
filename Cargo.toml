@@ -16,6 +16,9 @@ travis-ci = { repository = "Hugal31/yara-rust" }
 failure = "~0.1.0"
 lazy_static = "1.0"
 
+[dev-dependencies]
+tempdir = "*"
+
 [dependencies.yara-sys]
 path = "yara-sys"
 version = "0.1"
