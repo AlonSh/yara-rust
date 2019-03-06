@@ -11,7 +11,7 @@ fn main() {
 
     build::add_bindings();
 }
-//
+
 //mod build {
 //    use std::env;
 //    use std::fs;
@@ -24,7 +24,7 @@ fn main() {
 //            .expect("Could not copy bindings to output directory");
 //    }
 //}
-
+//
 mod build {
     extern crate bindgen;
 
